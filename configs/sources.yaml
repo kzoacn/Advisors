@@ -1,0 +1,85 @@
+version: 1
+universities:
+  - id: thu
+    name_zh: 清华大学
+    name_en: Tsinghua University
+    allowed_domains:
+      - tsinghua.edu.cn
+      - "*.tsinghua.edu.cn"
+    entries:
+      - id: thu-main
+        url: https://www.tsinghua.edu.cn/
+        type: university_home
+        status: seed
+        notes: 清华大学官网首页，用于发现官方院系入口。
+      - id: thu-units
+        url: https://www.tsinghua.edu.cn/yxsz.htm
+        type: unit_index
+        status: seed
+        notes: 清华大学院系设置入口，用于发现官方院系站点。
+      - id: thu-cs-faculty-list
+        url: https://www.cs.tsinghua.edu.cn/szzk/jzgml.htm
+        type: faculty_list
+        department: 计算机科学与技术系
+        status: seed
+        notes: 计算机科学与技术系教职工名录；页面可能包含电话号码，结构化输出必须排除。
+      - id: thu-sist-professors
+        url: https://www.sist.tsinghua.edu.cn/jsdw/jsml.htm
+        type: faculty_list
+        department: 信息科学技术学院
+        status: seed
+        notes: 信息科学技术学院教授名录入口。
+      - id: thu-ee-professors
+        url: https://www.ee.tsinghua.edu.cn/ryqk/teacher/xxgdzyjs/js2.htm
+        type: faculty_list
+        department: 电子工程系
+        status: seed
+        notes: 电子工程系教授列表入口。
+      - id: thu-ee-wuji-profile
+        url: https://web.ee.tsinghua.edu.cn/wuji/zh_CN/index.htm
+        type: teacher_profile
+        department: 电子工程系
+        status: seed
+        notes: 清华大学电子工程系教师个人主页样例，用于验证 profile-only 抽取链路。
+
+  - id: pku
+    name_zh: 北京大学
+    name_en: Peking University
+    allowed_domains:
+      - pku.edu.cn
+      - "*.pku.edu.cn"
+      - pkusz.edu.cn
+      - "*.pkusz.edu.cn"
+    entries:
+      - id: pku-main
+        url: https://www.pku.edu.cn/
+        type: university_home
+        status: seed
+        notes: 北京大学官网首页，用于发现官方院系入口。
+      - id: pku-teachers
+        url: https://www.pku.edu.cn/teachers.html
+        type: faculty_portal
+        status: seed
+        notes: 北京大学官网教职工入口。
+      - id: pku-scholar-home
+        url: https://scholar.pku.edu.cn/
+        type: profile_portal
+        status: seed
+        notes: 北京大学学者主页平台首页。
+      - id: pku-scholar-websites
+        url: https://scholar.pku.edu.cn/websites
+        type: profile_index
+        status: seed
+        notes: 北京大学学者主页浏览入口。
+      - id: pku-government-faculty
+        url: https://www.sg.pku.edu.cn/szdw/zzjs/index.htm
+        type: faculty_list
+        department: 政府管理学院
+        status: seed
+        notes: 政府管理学院在职教师入口；页面可能包含电话号码，结构化输出必须排除。
+      - id: pku-sam-faculty
+        url: https://sam.pkusz.edu.cn/szdw/zzjs.htm
+        type: faculty_list
+        department: 新材料学院
+        status: seed
+        notes: 北京大学深圳研究生院新材料学院在职教师入口。

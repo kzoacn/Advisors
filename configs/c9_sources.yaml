@@ -1,0 +1,188 @@
+version: 1
+universities:
+  - id: thu
+    name_zh: 清华大学
+    name_en: Tsinghua University
+    allowed_domains:
+      - tsinghua.edu.cn
+      - "*.tsinghua.edu.cn"
+    entries:
+      - id: thu-main
+        url: https://www.tsinghua.edu.cn/
+        type: university_home
+        status: seed
+        notes: 清华大学官网首页。
+      - id: thu-units
+        url: https://www.tsinghua.edu.cn/yxsz.htm
+        type: unit_index
+        status: seed
+        notes: 清华大学院系设置入口。
+
+  - id: pku
+    name_zh: 北京大学
+    name_en: Peking University
+    allowed_domains:
+      - pku.edu.cn
+      - "*.pku.edu.cn"
+      - pkusz.edu.cn
+      - "*.pkusz.edu.cn"
+      - bjmu.edu.cn
+      - "*.bjmu.edu.cn"
+    entries:
+      - id: pku-main
+        url: https://www.pku.edu.cn/
+        type: university_home
+        status: seed
+        notes: 北京大学官网首页。
+      - id: pku-units
+        url: https://www.pku.edu.cn/department.html
+        type: unit_index
+        status: seed
+        notes: 北京大学学部与院系入口。
+      - id: pku-teachers
+        url: https://www.pku.edu.cn/teachers.html
+        type: faculty_portal
+        status: seed
+        notes: 北京大学官网教职工入口。
+      - id: pku-scholar-websites
+        url: https://scholar.pku.edu.cn/websites
+        type: profile_index
+        status: seed
+        notes: 北京大学学者主页浏览入口。
+
+  - id: fdu
+    name_zh: 复旦大学
+    name_en: Fudan University
+    allowed_domains:
+      - fudan.edu.cn
+      - "*.fudan.edu.cn"
+    entries:
+      - id: fdu-main
+        url: https://www.fudan.edu.cn/
+        type: university_home
+        status: seed
+        notes: 复旦大学官网首页。
+      - id: fdu-units
+        url: https://www.fudan.edu.cn/489/list.htm
+        type: unit_index
+        status: seed
+        notes: 复旦大学院系专业入口。
+
+  - id: sjtu
+    name_zh: 上海交通大学
+    name_en: Shanghai Jiao Tong University
+    allowed_domains:
+      - sjtu.edu.cn
+      - "*.sjtu.edu.cn"
+      - shsmu.edu.cn
+      - "*.shsmu.edu.cn"
+    entries:
+      - id: sjtu-main
+        url: https://www.sjtu.edu.cn/
+        type: university_home
+        status: seed
+        notes: 上海交通大学官网首页。
+      - id: sjtu-units
+        url: https://www.sjtu.edu.cn/yxsz/
+        type: unit_index
+        status: seed
+        notes: 上海交通大学院系设置入口。
+
+  - id: nju
+    name_zh: 南京大学
+    name_en: Nanjing University
+    allowed_domains:
+      - nju.edu.cn
+      - "*.nju.edu.cn"
+    entries:
+      - id: nju-main
+        url: https://www.nju.edu.cn/
+        type: university_home
+        status: seed
+        notes: 南京大学官网首页。
+      - id: nju-units
+        url: https://www.nju.edu.cn/xybm.htm
+        type: unit_index
+        status: seed
+        notes: 南京大学学院部门入口。
+
+  - id: zju
+    name_zh: 浙江大学
+    name_en: Zhejiang University
+    allowed_domains:
+      - zju.edu.cn
+      - "*.zju.edu.cn"
+    entries:
+      - id: zju-main
+        url: https://www.zju.edu.cn/
+        type: university_home
+        status: seed
+        notes: 浙江大学官网首页。
+      - id: zju-units
+        url: https://www.zju.edu.cn/599/listm.htm
+        type: unit_index
+        status: seed
+        notes: 浙江大学学院（系）入口。
+
+  - id: ustc
+    name_zh: 中国科学技术大学
+    name_en: University of Science and Technology of China
+    allowed_domains:
+      - ustc.edu.cn
+      - "*.ustc.edu.cn"
+    entries:
+      - id: ustc-main
+        url: https://www.ustc.edu.cn/
+        type: university_home
+        status: seed
+        notes: 中国科学技术大学官网首页。
+      - id: ustc-units
+        url: https://www.ustc.edu.cn/yxjs.htm
+        type: unit_index
+        status: seed
+        notes: 中国科学技术大学院系介绍入口。
+
+  - id: hit
+    name_zh: 哈尔滨工业大学
+    name_en: Harbin Institute of Technology
+    allowed_domains:
+      - hit.edu.cn
+      - "*.hit.edu.cn"
+      - hitwh.edu.cn
+      - "*.hitwh.edu.cn"
+      - hitsz.edu.cn
+      - "*.hitsz.edu.cn"
+    entries:
+      - id: hit-main
+        url: https://www.hit.edu.cn/
+        type: university_home
+        status: seed
+        notes: 哈尔滨工业大学官网首页。
+      - id: hit-units
+        url: https://www.hit.edu.cn/11589/list.htm
+        type: unit_index
+        status: seed
+        notes: 哈尔滨工业大学教学与科研机构入口。
+
+  - id: xjtu
+    name_zh: 西安交通大学
+    name_en: Xi'an Jiaotong University
+    allowed_domains:
+      - xjtu.edu.cn
+      - "*.xjtu.edu.cn"
+    entries:
+      - id: xjtu-main
+        url: https://www.xjtu.edu.cn/
+        type: university_home
+        status: seed
+        notes: 西安交通大学官网首页。
+      - id: xjtu-units
+        url: https://www.xjtu.edu.cn/yxsz.htm
+        type: unit_index
+        status: seed
+        notes: 西安交通大学院系设置入口。
+      - id: xjtu-teacher-homepages
+        url: https://gr.xjtu.edu.cn/
+        type: profile_index
+        status: seed
+        notes: 西安交通大学教师主页中文综合门户。
